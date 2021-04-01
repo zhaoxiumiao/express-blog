@@ -8,4 +8,5 @@ module.exports = (req,res,next) =>{
     res.json(
         new ErrorModel('未登录')
     )
+    return 
 }

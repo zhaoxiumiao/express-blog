@@ -24,7 +24,7 @@ const getDetail = (id) => {
 
 const newBlog = (blogData = {}) => {
     //blogData 是一个博客对象，包含title content author属性
-    const title = xss(blogData.title)
+    const title = blogData.title
     const content = blogData.content
     const author = blogData.author
     const createtime = Date.now()
